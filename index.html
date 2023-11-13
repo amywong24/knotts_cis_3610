@@ -11,113 +11,186 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-
+    <style>
+        body {
+            margin-top: 60px;
+        }
+    </style>
 </head>
 
-<body>
-    <nav>
-        <a class="fw-bold" href="#page-top">Start</a>
-        <ul>
-            <li><a href="">About Knott's</a></li>
-            <li><a href="">Activities</a></li>
-        </ul>
-        <button>
-            Contact Us
-        </button>
+<body id="page-top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="#page-top">Start</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About Knott's</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#activities">Activities</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <header>
-        <img src="img/logo.png" class="img-fluid">
-        <h1 class="display-1">Knott's Berry Farm</h1>
-        <p class="lead">At Knott's, fun is always in season, with dozens of thrilling rides, shows, and attractions in
-            four themed
-            areas inspired by the history and culture of California.</p>
-        <div class="text-center">
-            <img src="img/knotts_900x600.jpg" alt="Entrance of Knott's Berry Farm with roller coaster in the back.">
-        </div>
-        <br>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/knotts_night_800x400.jpg" class="d-block w-100"
-                        alt="Night time view of Knott's Berry Farm.">
+        <div class="container">
+            <img src="img/logo.png" class="img-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <h1 class="display-1">Knott's Berry Farm</h1>
+                    <p class="lead">At Knott's, fun is always in season, with dozens of thrilling rides, shows, and
+                        attractions in four themed areas inspired by the history and culture of California.</p>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/485695-knotts-berry-farm_711x400.jpg" class="d-block w-100"
-                        alt="Overview of water park.">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/ghostrider_776x400.jpg" class="d-block w-100"
-                        alt="People on Ghostrider roller coaster.">
+                <div class="text-center col-md-1">
+                    <img src="img/knotts_900x600.jpg"
+                        alt="Entrance of Knott's Berry Farm with roller coaster in the back.">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <br>
         </div>
     </header>
 
     <main>
         <div class="text-center">
-            <h2 class="display-5">About Knott's Berry Farm</h2>
-            <p class="lead">Located just 10 minutes from the Anaheim resort area, the once small family farm has grown
-                into today's
-                family fun destination; home to the Knott's Berry Farm theme park, Knott's Soak City Waterpark and
-                Knott's Hotel. Whether you are looking for a weekend getaway, family road trip, or overnight stay,
-                you’ll find something for everyone at Knott’s Berry Farm!</p>
+            <h2 class="display-5" id="about">About Knott's Berry Farm</h2>
+            <p class="lead">Located just 10 minutes from the Anaheim resort area, the once small family farm has
+                grown into today's family fun destination; home to the Knott's Berry Farm theme park, Knott's Soak City
+                Waterpark
+                and Knott's Hotel. Whether you are looking for a weekend getaway, family road trip, or overnight
+                stay, you’ll find something for everyone at Knott’s Berry Farm!</p>
         </div>
-        <div class="text-center">
-            <h2 class="display-5">Activities</h2>
-            <article>
-                <img src="img/balloon-race-banner_920x690.jpg">
-                <h4>Rides & Experiences</h4>
-                <p>Fun is always in season at Knott’s Berry Farm! With dozens of rides, shows and attractions in four
-                    themed areas, there is something for everyone at Knott’s. Splash down the Timber Mountain Log Ride.
-                    The Boardwalk area offers rides and attractions for the whole family. Stroll along the streets of
-                    the Old West Ghost Town® where you’ll meet its many residents. Camp Snoopy, home of the PEANUTS
-                    Gang, will round out your day with pint-sized adventures in a high
-                    Sierra setting.</p>
-            </article>
-            <article>
-                <img src="img/chicken-to-go-banner_920x605.jpg">
-                <h4>Dining</h4>
-                <p>Since the beginning, food and dining has been at the heart of Knott’s Berry Farm. Before there was a
-                    theme park, Knott’s was a real berry farm where the boysenberry was first successfully grown. In
-                    1934 Mrs. Knott’s Chicken Dinner Restaurant first opened with Mrs. Knott and her children serving
-                    the first customers in their tea room. The restaurant has grown over the years into one of the
-                    largest in California, but the classic fried chicken dinner is still made the same way today using
-                    Mrs. Knott's recipes. What started as a small family berry farm soon began to grow into a world
-                    famous destination thanks to famous fried chicken dinners and delicious boysenberry pies. That
-                    culinary innovation still thrives today at Knott’s. Our team of chefs is always striving to bring
-                    you new flavors and tasty creations.</p>
-            </article>
-
-            <article>
-                <img src="img/kbf-snoopy-meet-greet-banner-v2_920x690.jpg">
-                <h4>Shows and Live Entertainment</h4>
-                <p>The rides are only half the fun! With comedy, live bands, musicals, and more, Knott's offers must-see
-                    live entertainment for every age group. The Camp Snoopy Theatre plays host to a number of fun family
-                    activities and shows starring Charlie Brown, Lucy, Linus, and the world’s most popular beagle,
-                    Snoopy. Plan a visit to Knott's historic, open-air Wagon Camp Theatre, home to a variety of
-                    family-friendly entertainment!</p>
-            </article>
-
-            <article>
-                <img src="img/banzai-falls-banner_920x690.jpg">
-                <h4>Visit Knott's Soak City Waterpark</h4>
-                <p>Knott’s Soak City Waterpark is a separately gated 15-acre water adventure park immediately adjacent
-                    to Knott’s Berry Farm. Soak City boasts 23 speed, tube and body slides including Shore Break
-                    featuring 6 different waterslide experiences and a thrilling family raft ride, The Wedge; the
-                    750,000-gallon Tidal Wave Bay wavepool; a one‑third‑mile Sunset River; and the three‑story Beach
-                    House, featuring 200 water guns, nozzles, sprayers and other interactive surprises.</p>
-            </article>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/knotts_night_800x400.jpg" alt="Night time view of Knott's Berry Farm."
+                                    width="400" height="400">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/485695-knotts-berry-farm_711x400.jpg" alt="Overview of water park."
+                                    width="400" height="400">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/ghostrider_776x400.jpg" alt="People on Ghostrider roller coaster."
+                                    width="400" height="400">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h2 class="display-5" id="activities">Activities</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <article>
+                                    <img src="img/balloon-race-banner_920x690.jpg" width="250" height="175">
+                                    <h4>Rides & Experiences</h4>
+                                    <p>Fun is always in season at Knott’s Berry Farm! With dozens of rides, shows and
+                                        attractions in
+                                        four themed areas, there is something for everyone at Knott’s. Splash down the
+                                        Timber
+                                        Mountain
+                                        Log Ride. The Boardwalk area offers rides and attractions for the whole family.
+                                        Stroll
+                                        along the
+                                        streets of the Old West Ghost Town® where you’ll meet its many residents. Camp
+                                        Snoopy,
+                                        home of the
+                                        PEANUTS Gang, will round out your day with pint-sized adventures in a high
+                                        Sierra
+                                        setting.</p>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article>
+                                    <img src="img/chicken-to-go-banner_920x605.jpg" width="250" height="175">
+                                    <h4>Dining</h4>
+                                    <p>Since the beginning, food and dining has been at the heart of Knott’s Berry Farm.
+                                        Before
+                                        there was a theme park, Knott’s was a real berry farm where the boysenberry was
+                                        first successfully
+                                        grown. In 1934 Mrs. Knott’s Chicken Dinner Restaurant first opened with Mrs.
+                                        Knott
+                                        and her children serving the first customers in their tea room. The restaurant
+                                        has
+                                        grown over the
+                                        years into one of the largest in California, but the classic fried chicken
+                                        dinner is
+                                        still made
+                                        the same way today
+                                        using Mrs. Knott's recipes. What started as a small family berry farm soon began
+                                        to
+                                        grow into a world famous destination thanks to famous fried chicken dinners and
+                                        delicious
+                                        boysenberry pies.
+                                        That culinary innovation still thrives today at Knott’s. Our team of chefs is
+                                        always
+                                        striving to
+                                        bring you new flavors and tasty creations.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <article>
+                                    <img src="img/kbf-snoopy-meet-greet-banner-v2_920x690.jpg" width="250" height="175">
+                                    <h4>Shows and Live Entertainment</h4>
+                                    <p>The rides are only half the fun! With comedy, live bands, musicals, and more,
+                                        Knott's
+                                        offers
+                                        must-see live entertainment for every age group. The Camp Snoopy Theatre plays
+                                        host
+                                        to a
+                                        number of fun family activities and shows starring Charlie Brown, Lucy, Linus,
+                                        and
+                                        the
+                                        world’s most
+                                        popular beagle, Snoopy. Plan a visit to Knott's historic, open-air Wagon Camp
+                                        Theatre,
+                                        home
+                                        to a variety of
+                                        family-friendly entertainment!</p>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article>
+                                    <img src="img/banzai-falls-banner_920x690.jpg" width="250" height="175">
+                                    <h4>Visit Knott's Soak City Waterpark</h4>
+                                    <p>Knott’s Soak City Waterpark is a separately gated 15-acre water adventure park
+                                        immediately
+                                        adjacent to Knott’s Berry Farm. Soak City boasts 23 speed, tube and body slides
+                                        including
+                                        Shore Break featuring 6 different waterslide experiences and a thrilling family
+                                        raft
+                                        ride,
+                                        The Wedge;
+                                        the 750,000-gallon Tidal Wave Bay wavepool; a one‑third‑mile Sunset River; and
+                                        the
+                                        three‑story
+                                        Beach House, featuring 200 water guns, nozzles, sprayers and other interactive
+                                        surprises.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 
     <footer class="text-center text-white bg-primary mt-5 p-5">
